@@ -1,0 +1,82 @@
+---
+title: Homework 12 - Command Line Interfaces
+author: <your name goes here>
+date: last-modified
+lightbox: true
+format:
+  html:
+    toc: true
+    embed-resources: true
+    theme: cosmo
+    code-block-background: true
+---
+
+Homework 12 serves up three different command line interface programs.  We're using python and the click library to create
+beautiful user interfaces.  You get to decide what your program does.
+
+* [LINK to repo for HW12](https://github.com/cmsc-vcu/cmsc475-sp2024-hw12-template)
+
+# CLI 1 - Simple greeting
+
+This program offers a simple greeting to the user and demonstrates key features of the
+python *click* library.  WRITE THIS SECTION FIRST!
+
+## Key features
+
+[Provide a bulleted list of features. WRITE THIS SECTION FIRST!]
+
+* defaults to a know username
+* username can be changed with `--name` option
+* number of greetings displayed can be controlled with `--count` option.
+* default help is available with --help
+
+## App documentation
+
+This section provide specific usages of this CLI.  WRITE THIS SECTION FIRST!  
+This is your DESIGN SECTION.  You should be thoughtful in choosing options so that they make sense in relation
+to each other.
+
+### Example command: Default usage
+
+(Design the output for this option.  What should this look like? WRITE THIS SECTION FIRST!)
+```default
+greet
+Hello, user
+```
+
+### Example command: more complicated example
+
+(design the output for this option.  What should this look like? WRITE THIS SECTION FIRST!)
+```default
+greet --name John --count 2
+Hello, John
+Hello, John
+```
+
+**... add more sections as necessary to full document your program! WRITE THESE SECTIONS FIRST**
+
+## Sample screens
+
+(provide one or more sample screenshots, preferable one for each of the command designs above.  ADD SCREENSHOTS AFTER
+PROGRAM IS WRITTEN.)
+
+![](./assets/sample-image.png)
+
+
+# CLI 2 - (name of application)
+
+[copy CLI 1 scaffold here]
+
+
+# CLI 3 - (name of application)
+
+[copy CLI 1 scaffold here]
+
+
+# Reflection
+
+* Should this module be taught at the beginning or the end of the semester?  That is, would these
+skills have helped you with capstone had you know them earlier?
+* How much time did you spend on this specific assignment?
+* What was the easiest part of this specific assignment?
+* What is the hardest part of this specific assignment?

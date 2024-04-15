@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cmsc475-sp2024-hw12"
+version = "0.1.0"
+description = ""
+authors = ["John Leonard <john@lowkeylabs.com>"]
+readme = "README.md"
+packages = [{include = "report"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter = "^1.0.0"
+matplotlib = "^3.8.4"
+plotly = "^5.20.0"
+click = "^8.1.7"
+loguru = "^0.7.2"
+pyfiglet = "^1.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+greet = "report.cli1:greet"
