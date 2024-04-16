@@ -1,17 +1,26 @@
 import click
-import pyfiglet
+import requests
+
+APIKEY = '7ac9cd98e15b83fd44ee2ada'
 
 @click.command()
-@click.option('-n', '--name', default='from cli1.py', help='Name of user to greet.')
-@click.option('-c', '--count', default=1, help='Number of greetings.')
-def greet(name, count):
-    """Simple program that greets NAME for a total of COUNT times."""
-    figlet = pyfiglet.Figlet()
-
-    for _ in range(count):
-        big_string = figlet.renderText(f'Hello, {name}!')
-        click.echo( big_string )
+@click.option('--from', 'from_currency', type=str, default='USD', help='The source currency code.')
+@click.option('--to', 'to_currency', type=str, required=True, help='The target currency code.')
+@click.option('--amount', type=float, default=1.0, help='The amount to convert.')
+def convertCurrency(from_currency, to_currency, amount):
+    """
+    Convert a currency amount from one currency to another.
+    """
+    url = f'https://api.exchangerate-api.com/v4/latest/{from_currency}'
+    response = requests.get(url, params={'apikey': APIKEY})
+    
+    if response.status_code == 200:
+        data = response.json()
+        conversion_rate = data['rates'][to_currency]
+        converted_amount = amount * conversion_rate
+        click.echo(f"{amount} {from_currency} is equal to {converted_amount:.2f} {to_currency}")
+    else:
+        click.echo(f"Error: {response.status_code} - {response.text}")
 
 if __name__ == '__main__':
-    greet()
-
+    convertCurrency()

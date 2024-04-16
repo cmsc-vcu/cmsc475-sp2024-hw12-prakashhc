@@ -2,8 +2,11 @@
 
 This homework focuses on design and implementation of command line interfaces (CLI).
 
-[Here is a link](https://virginiacommonwealth.instructure.com/courses/93957/assignments/853514) to the homework assignment in Canvas.
+In this assignment, I created 3 new CLI commands. The first one being a way for users to convert from one currency to another:
+1. Usage: convertCurrency --from USD --to CAD --amount 1
 
-Your report should be stored in the ``./report`` folder.  Any assets (PNG, JPG, etc.) should be stored underneath in ``./report/assets``.
+The second command I created was to check the weather at a given location. This was done through an API.
+1. Usage: weather --zip 23220
 
-(You must modify this README to make it your own.  Here is a list of awesome readmes: <https://github.com/matiassingers/awesome-readme>
+The third command I created was to convert an inputted amount of inches into feet.
+1. Usage: inchesToFeet --inches 24
