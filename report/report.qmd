@@ -38,7 +38,6 @@ convertCurrency --amount 1 --to INR
 
 ### Example command: more complicated example
 
-(design the output for this option.  What should this look like? WRITE THIS SECTION FIRST!)
 ```default
 convertCurrency --from EUR --to USD --amount 100
 100.0 EUR is equal to 106.00 USD
@@ -54,8 +53,6 @@ convertCurrency --from EUR --to USD --amount 100
 This program allows the user to see the weather. 
 
 ## Key features
-
-[Provide a bulleted list of features. WRITE THIS SECTION FIRST!]
 
 * defaults to zip code of 23059
 * can change the zip code and see different weathers with '--zip' option
@@ -102,7 +99,6 @@ This program allows the user to convert a certain number of inches into feet
 
 ### Example command: Default usage
 
-(Design the output for this option.  What should this look like? WRITE THIS SECTION FIRST!)
 ```default
 inchesToFeet --inches 13
 13.0 inches is equal to 1 feet and 1.00 inches.
