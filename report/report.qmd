@@ -31,7 +31,6 @@ This program allows the user to convert currency values from one currency to ano
 
 ### Example command: Default usage
 
-(Design the output for this option.  What should this look like? WRITE THIS SECTION FIRST!)
 ```default
 convertCurrency --amount 1 --to INR
 1.0 USD is equal to 83.51 INR
