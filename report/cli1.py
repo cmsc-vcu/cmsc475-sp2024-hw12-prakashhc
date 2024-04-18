@@ -8,7 +8,6 @@ APIKEY = '7ac9cd98e15b83fd44ee2ada'
 @click.option('--to', 'to_currency', type=str, default='INR', required=True, help='The target currency code.')
 @click.option('--amount', type=float, default=1.0, help='The amount to convert.')
 @click.help_option('--help', '-h', help='Usage: convertCurrency --from [CURRENCY SYMBOL] --to [CURRENCY SYMBOL] --amount [AMOUNT]')
-
 def convertCurrency(from_currency, to_currency, amount):
     """
     Convert a currency amount from one currency to another.
