@@ -1,7 +1,8 @@
 import click
 
 @click.command()
-@click.option('--inches', type=float, required=True, help='The number of inches to convert.')
+@click.option('--inches', type=float, default = '12', required=True, help='The number of inches to convert.')
+
 def inchesToFeet(inches):
     """
     Converts a given number of inches to feet and inches.

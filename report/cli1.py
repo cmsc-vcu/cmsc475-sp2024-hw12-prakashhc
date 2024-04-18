@@ -5,7 +5,7 @@ APIKEY = '7ac9cd98e15b83fd44ee2ada'
 
 @click.command()
 @click.option('--from', 'from_currency', type=str, default='USD', help='The source currency code.')
-@click.option('--to', 'to_currency', type=str, required=True, help='The target currency code.')
+@click.option('--to', 'to_currency', type=str, default='INR', required=True, help='The target currency code.')
 @click.option('--amount', type=float, default=1.0, help='The amount to convert.')
 @click.help_option('--help', '-h', help='Usage: convertCurrency --from [CURRENCY SYMBOL] --to [CURRENCY SYMBOL] --amount [AMOUNT]')
 
