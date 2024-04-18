@@ -2,7 +2,7 @@
 name = "cmsc475-sp2024-hw12"
 version = "0.1.0"
 description = ""
-authors = ["John Leonard <john@lowkeylabs.com>"]
+authors = ["Prakash Chatlani <chatlanipr@vcu.edu>"]
 readme = "README.md"
 packages = [{include = "report"}]
 
